@@ -25,7 +25,7 @@ export const Button = forwardRef<HTMLButtonElement, Props>(
 
 			case 'primary':
 				buttonClassName =
-					'text-white bg-primary-600 hover:bg-primary-500 border-primary-600 dark:bg-primary-600 dark:text-white';
+					'text-white bg-primary-900 hover:bg-primary-900 hover:bg-opacity-90 hover: border-primary-900';
 				break;
 
 			case 'outline-dark':
@@ -35,7 +35,7 @@ export const Button = forwardRef<HTMLButtonElement, Props>(
 
 			default:
 				buttonClassName =
-					'text-white bg-primary-600 hover:bg-primary-500 border-primary-600 dark:bg-primary-600 dark:text-white';
+					'text-white bg-primary-900 hover:bg-primary-900 hover:bg-opacity-90 border-primary-900 dark:bg-primary-600 dark:text-white';
 		}
 
 		if (as === 'a') {

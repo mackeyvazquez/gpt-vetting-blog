@@ -1,11 +1,11 @@
+import { Button } from './button';
 import { Search } from './searchbar';
-import { SocialLinks } from './social-links';
 
 export const Navbar = () => {
 	return (
-		<div className="grid grid-cols-1 items-center gap-5 pt-5 text-sm md:grid-cols-2">
+		<div className="mt-20 w-full flex flex-col justify-center items-center space-y-1 gap-2 text-left sm:space-y-0 md:flex-row md:max-w-lg md:mx-auto">
 			<Search />
-			<SocialLinks />
+			<Button type="primary" label="Search" className='w-full flex justify-center md:w-auto !py-2' />
 		</div>
 	);
 };

@@ -32,8 +32,6 @@ const buttonStyles: Record<Required<ButtonProps>['variant'], Record<ButtonState,
       'flex flex-row items-center focus:outline-none', // Extra added, instead of sending from parent component
     ),
     active: 'text-blue-600 dark:text-blue-600',
-    // 210 40% 96.1%
-    // #f1f5f9
     disabled: 'opacity-50 cursor-not-allowed',
   },
   'transparent-outline': {

@@ -168,7 +168,7 @@ export default function PostOrPage(props: Props) {
 		<AppProvider publication={publication} post={maybePost} page={maybePage}>
 			<Layout>
 				<Header />
-				<Container className="pt-10">
+				<Container className="pt-28">
 					<article className="flex flex-col items-start gap-10 pb-10">
 						{props.type === 'post' && <Post {...props} />}
 						{props.type === 'page' && <Page {...props} />}

@@ -12,7 +12,7 @@ function hasUrl(
 export const Header = () => {
 	const { publication } = useAppContext();
 
-	const logo = publication.preferences.logo;
+	const logo = publication.favicon;
 	const title = publication.title;
 
 	return (

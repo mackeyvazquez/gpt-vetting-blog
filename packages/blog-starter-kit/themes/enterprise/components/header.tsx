@@ -21,7 +21,7 @@ export const Header = () => {
 			<Container className="w-fulls flex justify-between gap-1">
 					<div className="flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground">
 						<Button 
-							href='/' 
+							href='/@plicableai' 
 							as='a' 
 							type='outline'
 							icon={
@@ -37,8 +37,8 @@ export const Header = () => {
 					</div>
 
 				<nav className="col-span-2 flex flex-row items-center justify-end gap-3 lg:col-span-3">
-					<Button href='/@plicableai' as="a" type="outline" label="Demo" className='hover:underline hover:bg-transparent md:text-sm'/>
-					<Button href='https://www.gptvetting.com/login' as="a" type="outline" label="Login" className='!bg-slate-100 md:text-sm'/>
+					<Button href='/@plicableai' as="a" type="outline" label="Demo" className='!font-medium hover:underline hover:bg-transparent md:text-sm'/>
+					<Button href='https://www.gptvetting.com/login' as="a" type="outline" label="Login" className='!font-medium !bg-slate-100 md:text-sm'/>
 				</nav>
 			</Container>
 		</header>

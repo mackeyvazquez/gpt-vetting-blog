@@ -68,6 +68,9 @@ export default function Index({ publication, initialAllPosts, initialPageInfo }:
 
 	const firstPost = allPosts[0];
 	const secondaryPosts = allPosts.slice(1, 4).map((post) => {
+		console.log(post.id)
+		console.log(firstPost)
+		
 		return (
 			<SecondaryPost
 				key={post.id}

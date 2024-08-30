@@ -14,18 +14,18 @@ export const Footer = () => {
 
 					<nav className='flex flex-col gap-2 sm:ml-auto sm:flex-row sm:gap-6'>
 						<div className='flex justify-center gap-4 sm:hidden'>
-							<Link href="/terms" className="hover:underline">
+							<Link href="https://gptvetting.com/terms" className="hover:underline">
 								Terms of Service
 							</Link>
-							<Link href="/privacy" className="hover:underline">
+							<Link href="https://gptvetting.com/privacy" className="hover:underline">
 								Privacy Policy
 							</Link>
 						</div>
 						<div className='flex gap-4 sm:gap-6'>
-							<Link href="/terms" className="hidden sm:inline hover:underline">
+							<Link href="https://gptvetting.com/terms" className="hidden sm:inline hover:underline">
 								Terms of Service
 							</Link>
-							<Link href="/privacy" className="hidden sm:inline hover:underline">
+							<Link href="https://gptvetting.com/privacy" className="hidden sm:inline hover:underline">
 								Privacy Policy
 							</Link>
 

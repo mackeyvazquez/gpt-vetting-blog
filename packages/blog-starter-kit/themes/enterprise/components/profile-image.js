@@ -19,19 +19,7 @@ export default class ProfileImage extends React.Component {
     const user = this.props.user;
     const blogURL = this.props.blogURL;
     return (
-      <a
-        href={
-          blogURL
-            ? blogURL
-            : user && !user.isDeactivated
-            ? `https://hashnode.com/@${user.username}`
-            : this.props.postUrlForAnonymous
-            ? this.props.postUrlForAnonymous
-            : '#'
-        }
-        ref={(c) => {
-          this.profileImage = c;
-        }}
+      <div
         className={`relative block h-full w-full`}
       >
         <Image
@@ -50,7 +38,7 @@ export default class ProfileImage extends React.Component {
           // }}
           alt={user ? user.name + "'s photo" : undefined}
         />
-      </a>
+      </div>
     );
   }
 }

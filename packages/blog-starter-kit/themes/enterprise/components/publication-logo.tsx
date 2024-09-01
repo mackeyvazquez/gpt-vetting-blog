@@ -10,7 +10,7 @@ const getPublicationLogo = (publication: PublicationFragment, isSidebar?: boolea
 	return publication.preferences.darkMode?.logo || publication.preferences.logo;
 }
 
-export const PublicationLogo = ({ isSidebar }: { isSidebar?: boolean }) => {
+export const PublicationLogo = ({ className, isSidebar }: { className?: string, isSidebar?: boolean }) => {
 	const { publication } = useAppContext();
 	const PUBLICATION_LOGO = getPublicationLogo(publication, isSidebar);
 
@@ -24,11 +24,11 @@ export const PublicationLogo = ({ isSidebar }: { isSidebar?: boolean }) => {
 				{PUBLICATION_LOGO ? (
 					<>
 						<img
-							className="block w-32 shrink-0 md:w-40"
+							className={`block shrink-0 ${className}`}
 							alt={publication.title}
 							src={resizeImage(PUBLICATION_LOGO, { w: 320, h: 80 })}
 						/>
-						<span className="text-2xl font-semibold text-white md:text-3xl">Blog</span>
+						<span className="text-xl font-semibold dark:text-white">GPT Vetting</span>
 					</>
 				) : (
 					<span

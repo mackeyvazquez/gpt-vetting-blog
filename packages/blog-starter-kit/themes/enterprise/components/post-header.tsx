@@ -62,12 +62,7 @@ export const PostHeader = ({ title, coverImage, date, author, readTimeInMinutes 
 						</button>
 					)}
 					{!post.coAuthors?.length && (
-						<a
-						href={`https://hashnode.com/@${post.author.username}`}
-						className="ml-2 font-semibold text-slate-600 dark:text-white md:ml-0"
-						>
-						<span>{post.author.name}</span>
-						</a>
+						<span className="ml-2 font-semibold text-slate-600 dark:text-white md:ml-0">{post.author.name}</span>
 					)}
 					{post.coAuthors && post.coAuthors.length > 0 && (
 						<button

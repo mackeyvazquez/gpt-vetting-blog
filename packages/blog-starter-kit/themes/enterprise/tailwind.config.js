@@ -12,6 +12,7 @@ module.exports = {
 				'accent-7': '#333',
 				success: '#0070f3',
 				cyan: '#79FFE1',
+				'btn-primary': '#27C969',
 				primary: colors.slate,
 				darkBackground: "#020817"
 			},

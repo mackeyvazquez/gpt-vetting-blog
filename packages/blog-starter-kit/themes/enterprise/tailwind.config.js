@@ -13,6 +13,7 @@ module.exports = {
 				success: '#0070f3',
 				cyan: '#79FFE1',
 				primary: colors.slate,
+				darkBackground: "#020817"
 			},
 			typography: () => ({
 				DEFAULT: {

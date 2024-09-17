@@ -68,7 +68,6 @@ export default function Index({ publication, initialAllPosts, initialPageInfo }:
 
 	const firstPost = allPosts[0];
 	const secondaryPosts = allPosts.slice(1, 4).map((post) => {
-	
 		return (
 			<SecondaryPost
 				key={post.id}
@@ -154,9 +153,9 @@ export default function Index({ publication, initialAllPosts, initialPageInfo }:
 					</div>
 
 					{allPosts.length > 0 && (
-						<div className="bg-slate-100 grid grid-cols-4 rounded-lg px-5 py-5 dark:bg-darkBackground md:py-10">
+						<div className="dark:bg-background grid grid-cols-4 rounded-lg bg-slate-100 px-5 py-5 md:py-10">
 							<div className="col-span-full md:col-span-2 md:col-start-2">
-								<h2 className="text-primary-900 dark:text-slate-100 mb-5 text-center text-lg font-semibold">
+								<h2 className="text-primary-900 mb-5 text-center text-lg font-semibold dark:text-slate-100">
 									Subscribe to our newsletter for updates and changelog.
 								</h2>
 								<SubscribeForm />

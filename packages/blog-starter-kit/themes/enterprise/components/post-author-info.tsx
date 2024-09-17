@@ -57,7 +57,7 @@ function PostAuthorInfo(props: any) {
 			{author.bio?.html && (
 				<div className="mb-4 block md:hidden">
 					<div
-						className="prose dark:prose-dark text-slate-600 "
+						className="hashnode-content-style !text-base"
 						dangerouslySetInnerHTML={{ __html: author.bio?.html }}
 					/>
 				</div>

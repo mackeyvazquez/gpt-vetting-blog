@@ -3,7 +3,7 @@ export const Footer = () => {
 		<>
 			<iframe
 				src="https://gptvetting.com/embed/footer"
-				className="h-28 w-full sm:h-20 md:h-14"
+				className="h-52 w-full sm:h-24 lg:h-14"
 			></iframe>
 		</>
 	);
